@@ -5,10 +5,6 @@
 # WEEK 1</p>
 
 # # 1. Write a PySpark program to square set of integers 
-
-# In[5]:
-
-
 import os
 import sys
 import pyspark 
@@ -16,10 +12,6 @@ import pyspark
 
 os.environ['PYSPARK_PYTHON'] = sys.executable
 os.environ['PYSPARK_DRIVER_PYTHON'] = sys.executable
-
-
-# In[8]:
-
 
 from pyspark.sql import SparkSession 
 # Create a SparkSession
@@ -42,10 +34,6 @@ spark.stop()
 
 
 # # 2. Write a PySpark program to find the maximum of given set of numbers.
-
-# In[11]:
-
-
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import max as max_
 
@@ -69,10 +57,6 @@ spark.stop()
 
 
 # # 3.Write a PySpark program to find average of N numbers.
-
-# In[18]:
-
-
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import avg
 spark = SparkSession.builder.appName("AverageOfNumbers").getOrCreate()
@@ -90,10 +74,6 @@ spark.stop()
 # # 4. Demonstrate how to read a CSV file into a PySpark DataFrame.
 # # 5 Use PySpark commands to display the first few rows and schema of a DataFrame.
 # # 6 Calculate basic summary statistics for a specific column in the DataFrame.
-
-# In[21]:
-
-
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import col
 
@@ -119,10 +99,6 @@ salary_stats.show()
 
 # Stop SparkSession
 #spark.stop()
-
-
-# In[ ]:
-
 
 
 
